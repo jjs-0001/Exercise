@@ -3,10 +3,10 @@ package jp.co.jjs.java_seminar.exercise_20140512_1;
 public class Exercise1 {
     public static void main(String[] args) {
         int i = 100;
-        float f = 50;
+        float f = 50.5f;
         double d = 50.5;
         char c = 'a';
-        long l = 200;
+        long l = 200L;
         short s = 50;
         boolean b = true;
         byte by = 10;
