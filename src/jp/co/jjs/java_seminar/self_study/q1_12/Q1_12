@@ -1,0 +1,10 @@
+char  ch;
+short  s;
+long   l;
+float  f;
+
+f / ch - (s * l)
+
+1. 式の中で最も大きなオペラントはfloat型のため式全体の型はfloat型になる
+
+2. s * lの中の場合long型のlの方がオペラントが大きいためその部分はlong型となる
