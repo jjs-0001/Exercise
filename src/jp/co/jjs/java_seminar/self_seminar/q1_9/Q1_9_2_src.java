@@ -4,8 +4,8 @@ public class Q1_9_2_src {
     public static void main(String args[]) {
         char c;
         boolean flag;
-        System.out.println(c);
-        System.out.println(flag);
+        //System.out.println(c);
+        //System.out.println(flag);
     }
 
 }
