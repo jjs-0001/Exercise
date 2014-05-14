@@ -1,6 +1,6 @@
 package jp.co.jjs.java_seminar.exercise_20140514_02;
 
-public class student {
+public class Student {
 
     //属性
     int id; //学生番号
@@ -9,7 +9,7 @@ public class student {
     int grade; //学生の学年
     String from; //学生の出身
 
-    public student(String name, int id) {
+    public Student(String name, int id) {
         this.name = name;
         this.id = id;
     }
