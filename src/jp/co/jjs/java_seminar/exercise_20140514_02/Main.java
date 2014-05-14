@@ -15,6 +15,7 @@ public class Main {
         man.answerplus();
         man.answerplus();
         man.answerplus();
-        System.out.println(man.answer);
+        man.answerplus();
+        System.out.println(man.report());
     }
 }

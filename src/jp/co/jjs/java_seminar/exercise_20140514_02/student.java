@@ -16,6 +16,11 @@ public class Student {
     }
 
     public void answerplus(){
-        answer++;
+        this.answer++;
+    }
+
+    public String report(){
+        String str = Integer.toString(this.answer);
+        return str;
     }
 }
