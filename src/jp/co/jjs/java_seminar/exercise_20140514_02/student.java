@@ -8,9 +8,14 @@ public class Student {
     int age; //学生の年齢
     int grade; //学生の学年
     String from; //学生の出身
+    int answer; //何問解いたか
 
     public Student(String name, int id) {
         this.name = name;
         this.id = id;
+    }
+
+    public void answerplus(){
+        answer++;
     }
 }

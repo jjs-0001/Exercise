@@ -9,5 +9,12 @@ public class Main {
         System.out.println(man.id);
         System.out.println(man.age);
         System.out.println(man.from);
+
+
+        System.out.println(man.answer);
+        man.answerplus();
+        man.answerplus();
+        man.answerplus();
+        System.out.println(man.answer);
     }
 }
