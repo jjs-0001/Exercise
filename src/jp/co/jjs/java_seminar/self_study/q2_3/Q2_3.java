@@ -11,8 +11,14 @@ public class Q2_3 {
             n = 10;
         }
 
-        for(int i = n - 10; i < str.length(); i++){
+        for(int i = n - 10; i < str.length(); i++){ //Q2_3_1
             System.out.println(str.charAt(i));
         }
+
+        String math = "5,4,3,2,7";
+
+        int m = math.length();
+
+        System.out.println(math.charAt(m - 1));
     }
 }
