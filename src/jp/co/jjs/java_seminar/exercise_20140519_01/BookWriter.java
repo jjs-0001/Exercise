@@ -6,10 +6,11 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 
 public class BookWriter {
 
-    public static void writer(Book[] booke) {
+    public static void writer(ArrayList<Book> booke) {
 
         try (BufferedWriter writer = Files.newBufferedWriter(
                 Paths.get("Book1.csv"), Charset.forName("UTF-8"),

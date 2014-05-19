@@ -17,11 +17,9 @@ public class Main {
             tana.bookinsert(book);
         }
 
-        System.out.println(tana.book[0].title);
-        System.out.println(tana.book[1].title);
-        System.out.println(tana.book[2].title);
+        System.out.println(tana.booklist);
 
-        BookWriter.writer(tana.book);
+        BookWriter.writer(tana.booklist);
 
 
     }
