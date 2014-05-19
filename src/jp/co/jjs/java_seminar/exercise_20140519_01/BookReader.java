@@ -9,22 +9,19 @@ import java.util.ArrayList;
 
 public class BookReader {
 
-    ArrayList<String> spl = new ArrayList<>();
-    String[] info = new String[5];
+    public static ArrayList<String> reader() {
+        ArrayList<String> spl = new ArrayList<>();
 
-    public ArrayList<String> reader(){
-        try(BufferedReader reader = Files.newBufferedReader(
-                Paths.get("Book.csv"),
-                Charset.forName("SHIFT-JIS"))){
+        try (BufferedReader reader = Files.newBufferedReader(
+                Paths.get("Book.csv"), Charset.forName("SHIFT-JIS"))) {
 
             String line = null;
 
-            while((line = reader.readLine()) != null){
+            while ((line = reader.readLine()) != null) {
                 spl.add(line);
             }
 
-
-        }catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return spl;

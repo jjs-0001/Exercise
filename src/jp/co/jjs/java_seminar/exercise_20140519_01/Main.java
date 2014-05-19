@@ -10,17 +10,20 @@ public class Main {
         String[] add = new String[5];
 
         BookShelf tana = new BookShelf();
-        BookReader read = new BookReader();
-        info = read.reader();
-        for(String spl: info){
+        info = BookReader.reader();
+        for (String spl : info) {
             add = spl.split(",", 5);
-            Book book = new Book(add[0],add[1],add[2],add[3],add[4]);
+            Book book = new Book(add[0], add[1], add[2], add[3], add[4]);
             tana.bookinsert(book);
         }
 
         System.out.println(tana.book[0].title);
         System.out.println(tana.book[1].title);
         System.out.println(tana.book[2].title);
+
+        BookWriter.writer(tana.book);
+
+
     }
 
 }
