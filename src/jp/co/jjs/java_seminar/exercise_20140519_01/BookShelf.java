@@ -25,4 +25,8 @@ public class BookShelf {
         return null;
     }
 
+    public Book[] getAll(){
+        return book;
+    }
+
 }
