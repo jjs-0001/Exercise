@@ -1,0 +1,6 @@
+1. JSP&サーブレットはデフォルトでリクエスト情報をLatin-1という文字コードで処理しようとするため
+   request.setCharacterEncodingでリクエスト情報の文字コードを宣言する必要がある
+
+2. ①getParameterValues
+   ②String list : list
+   ③out
