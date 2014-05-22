@@ -1,0 +1,6 @@
+1. URLに使用できる最大文字数の制限を受ける、クエリ情報には区切り文字の「?」や「&」
+   「%」、空白文字やマルチバイト文字(日本語)などを含めることができない
+   またデータがアドレス欄に露出してしまう
+
+2. Tomcatはクエリ情報の解析の際にはrequest.setCharacterEncodingで指定された文字コードを適用しない仕様になっている
+   そのためServer.xmlのConnectorタグにuseBodyEncodingForURI="true"と記述する必要がある
